@@ -16,9 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link
-    rel="stylesheet"
-    href="https://unpkg.com/siper@7/swiper-bundle.main.css"
-    />
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
 
 </head>
@@ -151,10 +151,10 @@
     </section>
 
 
-    <section class="container testimonials_container">
+    <section class="container testimonials_container mySwiper">
         <h2>Student's Testimonials</h2>
-        <div>
-            <article class="testimonial">
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="#">
 
@@ -170,7 +170,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="#">
 
@@ -186,7 +186,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="#">
 
@@ -202,7 +202,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="#">
 
@@ -218,6 +218,7 @@
                 </div>
             </article>
         </div>
+        <div class="swiper-pagination"></div>
     </section>
 
 
@@ -266,7 +267,23 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/siper@7/swiper-bundle.main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            600: {
+                slidesPerView: 2 
+            }
+          }
+        });
+      </script>
 </body>
 </html>
