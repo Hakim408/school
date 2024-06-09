@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6d9e6;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: relative;
+    margin: 50px auto;
+    background-color: #d6d9e6;
+    padding: 20px;
+}
+
+.container_log {
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color: rgba(18, 220, 247, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(58, 15, 15, 0.5);
+    
+}
+
+.form {
+    padding: 40px;
+}
+
+.form h2 {
+    color: #080808;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.form h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #fff;
+}
+
+.form .input__box {
+    margin-top: 20px;
+}
+
+.form .input__box input {
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form .input__box input[type="submit"] {
+    color: #666;
+    cursor: pointer;
+    background: #fff;
+    max-width: 100px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.forget {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.forget a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
