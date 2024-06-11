@@ -275,3 +275,28 @@ function generateGenericResponse(userInput) {
     // Return a random response from the responses array
     return responses[Math.floor(Math.random() * responses.length)];
 }
+
+
+
+// dashbaord 
+const sideMenu = document.querySelector('aside');
+const menuBtn1 = document.getElementById('menu-btn1');
+const closeBtn1 = document.getElementById('close-btn1');
+
+const darkMode = document.querySelector('.dark-mode');
+
+menuBtn.addEventListener('click', () => {
+    sideMenu.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', () => {
+    sideMenu.style.display = 'none';
+});
+
+darkMode.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode-variables');
+    darkMode.querySelector('span:nth-child(1)').classList.toggle('active');
+    darkMode.querySelector('span:nth-child(2)').classList.toggle('active');
+})
+
+
